@@ -56,3 +56,18 @@ Depency injection -- nice encapsulation...and good for testing..
 Controllers contain logic and state... views/directives...one way or two way  binding..
 
 services -- 
+---working on application ----angular EventReg----
+
+List of angular Events --- event details -- create new events and sessions...edit events and sessions...
+
+Login- ----  user to login.....freely register user account----
+
+server-- technology in place.....build and use node server and asp.net MVC>. we will make ajax calls to server...
+
+also using a bootstrarp themee.....
+
+Command shell -- bash shell -- for command line work...
+
+
+
+Agenda  --- controllers and scope...markup and binding...filters...validation..
