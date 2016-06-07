@@ -1,3 +1,3 @@
 'use strict';
-
+//modules are basic building blocks of angular...eventsApp is a global variable...
 var eventsApp = angular.module('eventsApp', []);

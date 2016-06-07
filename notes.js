@@ -70,4 +70,42 @@ Command shell -- bash shell -- for command line work...
 
 
 
-Agenda  --- controllers and scope...markup and binding...filters...validation..
+Agenda  --- controllers and scope...markup and binding...filters...validation....
+
+
+
+can modules depend on other modules ---- yes//
+
+
+//installed node,js from our angularFund directory...installed express framework...it downloaded anutomaticlally...
+
+C:\xampp\htdocs\rejuvenate\angularFund>npm install express@4.13.0 body-parser@1.
+13.1
+npm WARN package.json demoapp@1.0.0 No repository field.
+
+served this...
+
+http://localhost:8000/img/angularjs-logo.png
+
+
+controllers and scope.. controller provides scope..scope is not the model..model is not the data  that is put in the scope.....
+
+scope is not the model ---
+
+view bind to functions on the scope....and also porperties on the scope object...
+
+
+
+This is the URL I entered...working http://localhost:8000/EventDetails.html
+
+
+
+
+
+
+
+
+
+
+
+
