@@ -23,8 +23,9 @@
 		<img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
 		<div class="row">
 			<div class="spann11">
-				<h2 ng-style="mystyle" ng-bind-template="{{event.name}} {{event.date}}"></h2>
+				<h2 ng-class="myclass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
 			</div>
+			<button class="btn">Disabled</button>
 		</div>
 		<div class="row">
 

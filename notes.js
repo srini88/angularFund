@@ -173,4 +173,31 @@ $scope.mystyle = {
 			color :'red'    this in our controller.....text will turn to red color...
 		};
 
-		also there are ngClass, ngClassEven, ngClassOdd   ------ use it inside of ngRepeat directives...
+		also there are ngClass,-- ngClassEven, ngClassOdd   ------ use it inside of ngRepeat directives...
+
+
+ngClass 
+
+<h2 ng-class="myclass"
+
+css file 
+.blue{
+  color:blue;
+}
+
+$scope.myclass = "blue"; -- create the name of the class in the js file..which is blue and use that class in the css..
+
+ngCloak - to avoid a flash of unbound html...
+ngBind does not support multiple bindings....the ngBindTemplate directive does..
+
+
+---ngDisabled, ngChecked, ngMultiple, ngReadOnly, ngSelected...
+
+
+
+
+
+
+
+
+

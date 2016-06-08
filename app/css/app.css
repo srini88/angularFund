@@ -81,3 +81,6 @@ select, textarea {
 /*
 ///ng-clock - process that and hide that element until after parsing the rest of it ..and replace elements..
 /////other way is move the angular to the head..tag..*/
+.blue{
+  color:blue;
+}

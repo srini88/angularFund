@@ -52,6 +52,7 @@ eventsApp.controller('EventsController',
 		$scope.mystyle = {
 			color :'red'
 		};
+		$scope.myclass = "blue";
 	})
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..
