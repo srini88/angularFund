@@ -56,7 +56,7 @@ eventsApp.controller('EventsController',
 		$scope.buttonDisabled = true;
 		$scope.sortorder ='-upVoteCount';  //by default it will be upVoteCount
 		///also ng-model in select will show this by default
-		$scope.query = "introductory";
+		//$scope.query = "introductory";  //not needed since we put query.level
 	})
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..

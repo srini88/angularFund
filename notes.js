@@ -263,3 +263,5 @@ orderBy limitTo limit records to certain number of recors..  filter - by exressi
 		</select>
 
 <li ng-repeat="session in event.sessions | orderBy:sortorder|filter:query">
+
+<select ng-model="query" class="input-medium"> problem with this :does not filter by variable..it checks everything...so use query.level...
