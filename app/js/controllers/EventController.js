@@ -49,6 +49,9 @@ eventsApp.controller('EventsController',
 			session.upVoteCount--;   //passing in the session itself from ng-click--dont need any fancy
 			console.log(session.upVoteCount);
 		}
+		$scope.mystyle = {
+			color :'red'
+		};
 	})
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..

@@ -166,3 +166,11 @@ never manipulate dom with controller
 <h2 ng-hide="boolValue" class="ng-hide">Hide This</h2>   ng-hide class will make display:none
 
 ngClock -- hide portions or all of the page until angular has time to run and go through and parse the html and replace the directives or bindings with actual values...otherwise you get flashes.... it will show angular syntax...{{}}
+
+<h2 ng-style="mystyle"   put this in html 
+
+$scope.mystyle = {
+			color :'red'    this in our controller.....text will turn to red color...
+		};
+
+		also there are ngClass, ngClassEven, ngClassOdd   ------ use it inside of ngRepeat directives...
