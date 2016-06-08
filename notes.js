@@ -265,3 +265,41 @@ orderBy limitTo limit records to certain number of recors..  filter - by exressi
 <li ng-repeat="session in event.sessions | orderBy:sortorder|filter:query">
 
 <select ng-model="query" class="input-medium"> problem with this :does not filter by variable..it checks everything...so use query.level...
+
+
+you can limit a filter to only search in a specific field:
+
+you can specify custom date formats with the date filter...
+
+------writing custom filter...
+
+module.filter('name', function(){
+	//have to return a function..
+	return function(input, filter parameters){
+
+		//modify input
+		return modifiedOutput;
+	}
+})
+---to try lets make duration an integer..instead of a string..
+
+<span>Duration: {{session.duration | durations}}</span><br/>   -- durations is the filter , that returns a function..
+
+
+eventsApp.filter('durations', function(){
+	//must return another fn, this fn first parameter is input
+	return function(duration){
+		switch(duration){
+			case 1:
+				return "Half Hour";
+			case 2:
+				return "1 Hour";
+			case 3:
+				return "Half Day";
+			case 4:
+				return "Full Day";
+
+		}
+
+	}
+})
