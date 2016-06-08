@@ -40,6 +40,7 @@ eventsApp.controller('EventsController',
 			]
 
 		}
+		$scope.boolValue = true;
 		$scope.upVoteSession = function(session){
 			session.upVoteCount++;   //passing in the session itself from ng-click--dont need any fancy
 			console.log(session.upVoteCount);
@@ -51,3 +52,4 @@ eventsApp.controller('EventsController',
 	})
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..
+

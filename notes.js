@@ -150,3 +150,17 @@ ngApp , ngBind , ngBindTempalte , ngBindHtml, ngBindHtmlUnsafe
 ngBind - remove curly braces and do this <h2 ng-bind="event.name"></h2>
 
 ng-bind-template ="{{event.name}}{{event.date}}"   -- can put multiple stuff in curly braces in bind template
+
+ngBindHtml -- part of angular sanitise........have to inject sanitize as a dependency...
+
+sanitize removes anything that  is dangerous...still allows you to have html...
+
+--ngHide and ngShow --- mirror images of each other..
+
+only manipulate dom using directives, and never manipulate using controler
+
+never manipulate dom with controller
+
+<h2 ng-show="boolValue">Show This</h2>   will show when true....ng-hide will hide when true
+
+<h2 ng-hide="boolValue" class="ng-hide">Hide This</h2>   ng-hide class will make display:none
