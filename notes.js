@@ -303,3 +303,18 @@ eventsApp.filter('durations', function(){
 
 	}
 })
+
+-------two way data binding --------------
+
+ngModel  - works with input select and textArea, will hook up two way data binding..
+
+
+<input type ="text" ng-model = "object.propery"
+
+
+<input type ="text" ng-model = "propery"
+
+<input type ="text" ng-model = "object.container.propery"
+
+
+
