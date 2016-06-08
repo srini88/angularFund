@@ -245,3 +245,9 @@ uppercase, lowercase... piece of string data either uppercase or lowercase..
 json filter ---
 
 orderBy limitTo limit records to certain number of recors..  filter - by exression
+
+
+<option selected value ="name">Name</option>
+			<option value ="-upVoteCount">Votes</option>
+
+			values matching up with the variable names in the js file..
