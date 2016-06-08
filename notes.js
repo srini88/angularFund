@@ -112,10 +112,12 @@ This is the URL I entered...working http://localhost:8000/EventDetails.html
 					</div>
 				</div>
 
+--now need to implement votion
+
+so we need to rig up clcik event on the up and down icons
 
 
+ ng-click="upVoteSession(session)">  pass in the session that you are upvoting...this session is one entity in the ng-repeat
 
-
-
-
+with just click it does not work...got to use ng-click
 
