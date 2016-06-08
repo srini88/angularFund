@@ -224,3 +224,23 @@ tag form, attribute form and classname form --- instead use attribute fform or c
 what do you need to do to support older versions of IE with angular?  
 
 polyfull JSON.stringify and avoid custom tag name directives..
+
+
+---------Expressions in Angular -----
+JS like code snippets  {{expression}} typically variable names....
+
+you can create an array inside expressions {{[1, 2, 3, 4][0]}}  -expressions have lot of power..
+
+-----Filters ------
+Modifying Output --- FOrmatting... sorting Dataset....Fitering dataset....s
+
+
+using filter {{expression | filter}} 
+
+Built in filters ----
+
+uppercase, lowercase... piece of string data either uppercase or lowercase..
+
+
+
+
