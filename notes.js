@@ -148,3 +148,5 @@ whenever checkbox is checed or unchecekd -- ngChange requires ngModel direct..im
 ngApp , ngBind , ngBindTempalte , ngBindHtml, ngBindHtmlUnsafe
 
 ngBind - remove curly braces and do this <h2 ng-bind="event.name"></h2>
+
+ng-bind-template ="{{event.name}}{{event.date}}"   -- can put multiple stuff in curly braces in bind template
