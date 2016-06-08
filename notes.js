@@ -100,7 +100,17 @@ This is the URL I entered...working http://localhost:8000/EventDetails.html
 
 
 
-
+<div class="span0 well votingWidget">
+					<div class="votingButton">   
+						<i class="icon-chevron-up icon-white"></i> provides up arrow
+					</div>
+					<div class="badge badge-inverse">
+						<div>{{session.upVoteCount}}</div> put the number in a circlle
+					</div>
+					<div class="votingButton">
+						<i class="icon-chevron-down"></i>  provides down array
+					</div>
+				</div>
 
 
 
