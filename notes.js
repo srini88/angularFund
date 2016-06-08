@@ -193,7 +193,9 @@ ngBind does not support multiple bindings....the ngBindTemplate directive does..
 
 ---ngDisabled, ngChecked, ngMultiple, ngReadOnly, ngSelected...
 
-
+ngDisabled --
+$scope.buttonDisabled = true;
+<button class="btn" ng-disabled="buttonDisabled">Disabled</button> if the value is true it will be disabled..
 
 
 
