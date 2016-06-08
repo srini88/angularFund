@@ -318,3 +318,19 @@ ngModel  - works with input select and textArea, will hook up two way data bindi
 
 
 
+put data inside your scope...add model xdirective to each field..
+
+
+<input type="url" id="eventImageUrl" ng-model ="event.imageUrl" class="input-xlarge" placeholder="Url of image...">
+				</fieldset>
+
+				<img ng-src="{{event.imageUrl}}" src="">
+
+I copied one url of a google image and put it...
+below it started loading..means the image tag is bound by ng-model  event.imageUrl
+
+
+Two way binding will update on every key stroke..
+
+Input, select and textarea will be bound to two way binding..
+
