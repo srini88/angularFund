@@ -246,8 +246,20 @@ json filter ---
 
 orderBy limitTo limit records to certain number of recors..  filter - by exression
 
-
+<select ng-model="sortorder" class="input-small">
 <option selected value ="name">Name</option>
 			<option value ="-upVoteCount">Votes</option>
 
 			values matching up with the variable names in the js file..
+
+
+
+<select ng-model="query" class="input-medium">
+			<option selected value ="">All</option>
+			<option value ="introductory">Introductory</option>
+			<option value ="intermediate">Intermediate</option>
+			<option value ="advanced">Advanced</option>
+			
+		</select>
+
+<li ng-repeat="session in event.sessions | orderBy:sortorder|filter:query">
