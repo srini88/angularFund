@@ -197,9 +197,13 @@ ngDisabled --
 $scope.buttonDisabled = true;
 <button class="btn" ng-disabled="buttonDisabled">Disabled</button> if the value is true it will be disabled..
 
+ngForm ----- ngForm can be nested in other forms....
+ngSubmit --- allows you to call a method on scope if the form is submitted....on submit button or enter key..
+
+ngHref = binding href att on anchor tag...
+ngSrc =  will set as binding...
+
+ngNonBindable --- specifies an area that do not parse and do the binding...
 
 
-
-
-
-
+<div ng-non-bindable>{{1+2}}</div>  will not evaluate......and will see actual text...and angular will not parse..
