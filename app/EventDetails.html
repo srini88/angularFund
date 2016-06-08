@@ -9,7 +9,7 @@
 <script src ="/js/app.js"></script>
 <script src="/js/controllers/EventController.js"></script>
 </head>
-<body>
+<body ng-cloak>
 <div class="container">
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -27,8 +27,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<h2 ng-show ="boolValue">Show This</h2>
-			<h2 ng-hide ="boolValue">Hide This</h2>
+
 			<div class="span3">
 				<div><strong>Date:</strong>{{event.date}}</div>
 				<div><strong>Time:</strong>{{event.time}}</div>

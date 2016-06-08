@@ -164,3 +164,5 @@ never manipulate dom with controller
 <h2 ng-show="boolValue">Show This</h2>   will show when true....ng-hide will hide when true
 
 <h2 ng-hide="boolValue" class="ng-hide">Hide This</h2>   ng-hide class will make display:none
+
+ngClock -- hide portions or all of the page until angular has time to run and go through and parse the html and replace the directives or bindings with actual values...otherwise you get flashes.... it will show angular syntax...{{}}
