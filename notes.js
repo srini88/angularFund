@@ -207,3 +207,20 @@ ngNonBindable --- specifies an area that do not parse and do the binding...
 
 
 <div ng-non-bindable>{{1+2}}</div>  will not evaluate......and will see actual text...and angular will not parse..
+
+
+what does ngForm do -- Nest forms within each other....
+ngSrc directive delays fetching an image until after binding has occured...
+
+setting disabled = false , does not disable control in many browsers...so deal with angular instted by means of ngDisabled..
+
+-IE restrictions---
+
+Polyfill JSON.stringify...
+no NG tags --- dont use tag format of the directive....
+
+tag form, attribute form and classname form --- instead use attribute fform or class form in IE.....
+
+what do you need to do to support older versions of IE with angular?  
+
+polyfull JSON.stringify and avoid custom tag name directives..
