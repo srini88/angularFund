@@ -334,3 +334,73 @@ Two way binding will update on every key stroke..
 
 Input, select and textarea will be bound to two way binding..
 
+---------validation=-----
+
+Required attribute...
+ngPattern ...meat of validation 
+CSS classes...
+
+
+<button type="submit" ng-disabled = "newEventForm.$invalid"ng-click="saveEvent(event, newEventForm)" class="btn btn-primary">Save</button>
+
+
+form name is newEventForm --- form will be invalid until you enter the right values...
+
+logging out the form name itself --- console.log(newEventForm)
+
+
+$dirty 
+opposites
+$pristine 
+
+$invalid
+opposites
+$valid
+
+
+angular puts some classes also..ng-invalid , valid to your form shit..
+
+opposite of dirty is pristine...
+
+ngPattern lets you create regex for validation...
+
+a form must have a name to do any validation properties....
+
+A service is some object that performs business logic...
+
+services are often stateless...
+
+
+built in services --- navigation, ajax interaction, custom services...
+
+services encapsulate reusable business logic.... 
+break app into pieces that is easier to maintain....
+
+SRP single responsibility principle...
+
+an object should  have onyl a single responsibility...
+
+Inject them to other controllers using DI...
+
+Testable --- isolate your tests for just pieces of code you just want to test...you can just inject any service you need... s
+
+AngularJS built from ground to be testable...
+
+
+service1, service2  -- can inject both in a controller....
+
+
+$scope itself is an angular service..you injected it in the controller...
+
+
+-----factory=========
+
+eventsApp.factory('eventData',function(){
+	return {
+
+
+then inject this eventData in the controller...
+
+
+
+
