@@ -41,12 +41,12 @@
 			</div>
 		</div>
 
-		{{3.1434343 | number:2}}
-
+		<!-- {{3.1434343 | currency}}  $3.14 -->
+		<!-- {{event.date | date:'medium'}} many formats like this -->
 		<hr/>
 		<h3>Sessions</h3>
 		<ul class="thumbnails">
-			<li ng-repeat="session in event.sessions">
+			<li ng-repeat="session in event.sessions | orderBy:sortorder">
 			
 			<div class="row session">
 				<div class="span0 well votingWidget">

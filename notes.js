@@ -242,5 +242,6 @@ Built in filters ----
 uppercase, lowercase... piece of string data either uppercase or lowercase..
 
 
+json filter ---
 
-
+orderBy limitTo limit records to certain number of recors..  filter - by exression

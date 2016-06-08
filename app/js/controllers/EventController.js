@@ -13,20 +13,20 @@ eventsApp.controller('EventsController',
 			imageUrl:'/img/angularjs-logo.png',
 			sessions:[
 				{
-					name:'Directives Masterclass',
-					creatorName :'Srinivas Palghat',
-					duration :'1 hr',
-					level :'Advanced',
-					abstract:'In this session you will learn in and outs of directives',
-					upVoteCount :3
-				},
-				{
 					name:'Scopes for fun and profit',
 					creatorName :'John Doe',
 					duration :'2 hr',
 					level :'Amateaur',
 					abstract:'In this session you will learn in and outs of scopes',
 					upVoteCount :2
+				},
+				{
+					name:'Directives Masterclass',
+					creatorName :'Srinivas Palghat',
+					duration :'1 hr',
+					level :'Advanced',
+					abstract:'In this session you will learn in and outs of directives',
+					upVoteCount :3
 				},
 				{
 					name:'Well Behaved Controllers',
@@ -54,6 +54,7 @@ eventsApp.controller('EventsController',
 		};
 		$scope.myclass = "blue";
 		$scope.buttonDisabled = true;
+		$scope.sortorder ='name';
 	})
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..
