@@ -121,3 +121,30 @@ so we need to rig up clcik event on the up and down icons
 
 with just click it does not work...got to use ng-click
 
+----Built in directives -----------
+directives are new HTML functionality.....
+Angular parses through html and look for directives and takes action...
+
+///how will you write directives...  4 ways - 4th way is by HTML comment...
+<ng-form/>   //just as tag
+div ng-form/>  //just as attribute
+
+<div class="ng-form"/>  //as class
+
+--------Event Directives------
+ng-click
+ngDblClick
+ngMouseDown
+ngMouseenter
+ngMouseup
+ngChange --- detect a change event on lot of HTML input elements..
+
+<input type ="checkbox" ng-change ="handleChange()" ng-model ="property" />
+
+
+whenever checkbox is checed or unchecekd -- ngChange requires ngModel direct..imp...
+
+--Other directives ------
+ngApp , ngBind , ngBindTempalte , ngBindHtml, ngBindHtmlUnsafe
+
+ngBind - remove curly braces and do this <h2 ng-bind="event.name"></h2>
