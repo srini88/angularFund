@@ -1,7 +1,9 @@
 'use strict';
 eventsApp.controller('EventsController',
 	function EventController($scope, eventData){
-		$scope.event =eventData.event;
+		eventData.getEvent(function(event){
+			$scope.event = event;
+		});
 		$scope.boolValue = true;
 		$scope.upVoteSession = function(session){
 			session.upVoteCount++;   //passing in the session itself from ng-click--dont need any fancy

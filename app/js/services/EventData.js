@@ -1,44 +1,18 @@
 //eventsApp is available on the windows scope..
-eventsApp.factory('eventData',function(){
+////event data service is creating an object inline...instead put that stuff in a json file..
+eventsApp.factory('eventData',function($http, $log){
 	return {
-		event : {
-			name :'Angular Boot Camp',
-			date: '1/1/2013',
-			time:'10.30am',
-			location:{
-				address:'Google headquarters',
-				city:'Mountain View',
-				province :'CA'
-			},
-			imageUrl:'/img/angularjs-logo.png',
-			sessions:[
-				{
-					name:'Scopes for fun and profit',
-					creatorName :'John Doe',
-					duration :2,
-					level :'introductory',
-					abstract:'In this session you will learn in and outs of scopes',
-					upVoteCount :2
-				},
-				{
-					name:'Directives Masterclass introductory',
-					creatorName :'Srinivas Palghat',
-					duration :1,
-					level :'Advanced',
-					abstract:'In this session you will learn in and outs of directives',
-					upVoteCount :3
-				},
-				{
-					name:'Well Behaved Controllers',
-					creatorName :'Jane Doe',
-					duration :4,
-					level :'Advanced',
-					abstract:'In this session you will learn in and outs of Controllers',
-					upVoteCount :35
-				}
+		//http call is asybc.. wgeb we calll getevent fun we pass in success callback...
+		getEvent : function(successcb){
+			$http({
+				method:'GET',
+				url:'/data/event/1'
+			}).then(function (response){
+				successcb(response.data);
 
-			]
-
+			}, function (response){
+				$log.warn(response);
+			})
 		}
 	};
 })

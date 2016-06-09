@@ -409,3 +409,27 @@ then inject this eventData in the controller...
 angularjsdemo@gmail.com  I getting angular imag...dynamically...
 
 <img ng-src="{{getGravatarUrl(user.emailAddress)}}">
+
+
+---angular comes with a whole host of built in services...
+
+$http
+$resource 
+$anchorScroll
+$cacheFactory 
+$compile 
+$parse 
+$locale 
+$timeout 
+$exceptionHandler 
+$filter 
+$cookieStore 
+
+
+$interpolate 
+$log 
+$rootScope 
+$window 
+
+
+
