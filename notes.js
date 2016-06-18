@@ -434,3 +434,68 @@ $window
 $routeParams, $location...
 
 
+=---------------resource service --------------
+
+based on rest architecture...your web server is using rest based architecture....
+
+godammn resource is in a different module......you got to include ng-resporce..........you have to include angular-resource module...
+
+
+
+I feel that other answers, while correct, don't quite explain the root of the question: REST is a subset of HTTP. This means everything that can be done via REST can be done via HTTP but not everything that can be done via HTTP can be done via REST. That is why $resource uses $http internally.
+
+So, when to use each other?
+
+If all you need is REST, that is, you are trying to access a RESTful webservice, $resource is going to make it super easy to interact with that webservice.
+
+If instead, you're trying to access ANYTHING that is not a RESTful webservice, you're going to have to go with $http. Keep in mind, you could also access a RESTful webservice via $http, it will just be much more cumbersome than with $resource. This is the way most people have been doing it outside AngularJS, by using jQuery.ajax (equivalent of Angular's $http).
+
+
+
+$http makes general purpose AJAX call, in which general means it can include RESTful api plus Non-RESTful api.
+
+and $resource is specialized for that RESTful part.
+
+$resource way to fetch data
+angular.module('myApp', ['ngResource'])
+
+    // Service
+    .factory('FooService', ['$resource', function($resource) {
+        return $resource('/api/cars/:carId')
+    }]);
+
+    // Controller
+    .controller('MainController', ['FooService', function(FooService){
+        var self = this;
+        self.cars = FooService.query();
+        self.myCar = FooService.get('123');
+
+    }]);
+
+This will give you an resource object, which is accompanied with get, save, query, remove, delete methods automatically.
+
+
+
+$http way to fetch data
+
+angular.module('myApp', [])
+
+    // Service
+    .factory('FooService', ['$http', function($http){
+        return {
+            query: function(){
+                return $http.get('/api/cars');
+            },
+
+            get: function(){
+                return $http.get('/api/cars/123');
+            }
+            // etc...
+        }
+
+See how we need to define each common operation on RESTFul API. Also one difference is that $http returns promise while $resource returns an object. There are also third-party plugins to help Angular deal with RESTFul API like restangular
+
+
+
+
+
