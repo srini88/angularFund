@@ -431,5 +431,6 @@ $log
 $rootScope 
 $window 
 
+$routeParams, $location...
 
 

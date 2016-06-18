@@ -28,3 +28,14 @@ eventsApp.controller('EventsController',
 
 //PS at this point ng-click works and does upvoting and downvoting..but when you refresh the page , the data is gone...it is setting back to its original values..
 
+
+// eventData.getEvent  returns a promise
+// eventsApp.factory('eventData',function($http, $log){
+// 	return {
+
+// 		getEvent : function(){
+// 			//returning a promise,,caller will call then
+// 			return $http({method:'GET',url:'/data/event/1'});
+// 		}
+// 	};
+// })
