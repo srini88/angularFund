@@ -566,3 +566,33 @@ if you go to another site and come back here....everything will be reloaded...
 
 template cache - to store templates by angular...if you go back and forth on the site..it does not take the hit...it will be feched from template cahce...
 
+
+---why do we need directives ---
+
+HTML intended to create static documentns... we wanted dynamic documents...
+
+we started to stretch html more and more...
+so HTML extended as programming language....
+
+web componenets in HTML current in draft proposal-- will allw you to create own custom html elemeents with embedded functionality...
+
+----angular's directives are more powerful....than web componenets.---
+
+
+create custom elements ...create custom events --- built in event type --- ng- click ,
+
+directives to observe and react to changes on the model...
+
+For directives you return a directive definition object...
+
+eventsApp.directive('mySample', function(){
+
+});
+
+
+
+
+
+
+
+

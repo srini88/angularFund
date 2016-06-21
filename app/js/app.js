@@ -9,4 +9,9 @@ var eventsApp = angular.module('eventsApp', ['ngRoute'])
 			templateUrl:'templates/NewEvent.html',
 			controller : 'EditEventController'
 		})
+		$routeProvider.when('/sampleDirective',
+		{
+			templateUrl:'templates/SampleDirective.html',
+			controller : 'SampleDirectiveController'
+		})
 	})
