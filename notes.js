@@ -497,5 +497,72 @@ See how we need to define each common operation on RESTFul API. Also one differe
 
 
 
+------------anchorscroll service......--------
 
+
+you need an element with an id on it.
+
+need a button  with ng-clikc === scrollToSession()
+
+
+eventsApp.controller('eventsController', function EventController(@anchorScroll){
+
+
+	$scope.scrollToSession = function(){
+		$anchorScroll;
+	}
+})
+
+injected anchorscroll in the controller...
+
+.html##session3....scrolls down to the element with the id session3..
+takes what takes in the hash and goes there...
+we dont have html 5 routing turned on--that's why you have two hashes..
+
+
+---------skipped some stuff-=----------went to routing-------
+
+gmail site is a single page application.... changing it on the fly..making saves via ajax... As we navigate around the site....the url changing but still single page web application..
+
+ability to look like routing to multiple pages when really you are just navigating around locally within client...and fetching resources behind the scenes... 
+
+routing is the big part of creating single page applications...
+
+ok now--created index.html page...
+
+All JS references and index references in our index html itslef..
+
+
+
+//routing in the html
+
+<li><a href="#/newEvent">Create Event</a></li>
+
+in the app.js 
+	.config(function($routeProvider) {   
+		
+
+		$routeProvider.when('/newEvent',
+		{
+			templateUrl:'templates/NewEvent.html',
+			controller : 'EditEventController'
+		})
+	})
+
+when we go to newEvent on the url --- goes to when  ...then this template is loaded dynamically.....
+
+
+templates/newEvent.html was requested..angular intercepted and noticed it had route for it... use that template in order to create that view ...
+
+
+if we go back and click on that newEvent link again ....
+Fiddler does not show new requests made to the server..
+
+when angular loads a template ,  angular stores it in the template cache...as you navigate back and forth the pages..it does not take hit to fetch the request from the server.....
+
+
+if you go to another site and come back here....everything will be reloaded...
+
+
+template cache - to store templates by angular...if you go back and forth on the site..it does not take the hit...it will be feched from template cahce...
 
